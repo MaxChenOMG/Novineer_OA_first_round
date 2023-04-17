@@ -1,0 +1,31 @@
+<!-- defines the document type, and version of html-->
+<!DOCTYPE html>
+<!-- open the root element of the page, and set language-->
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding for the HTML document (UTF-8)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.plot.ly/plotly-2.20.0.min.js"
+      charset="utf-8"
+    ></script>
+    <title>Data Point Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="text" id="data-input" placeholder="Enter data point" />
+      <input type="text" id="data-input2" placeholder="Enter data point" />
+      <button id="submit-data">Display</button>
+      <!-- Creates a div with an id of "result" to display the validation result or error message-->
+      <div id="result"></div>
+      <script src="plotly.min.js"></script>
+      <div id="graph"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
